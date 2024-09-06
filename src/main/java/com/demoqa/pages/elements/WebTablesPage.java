@@ -16,7 +16,13 @@ public class WebTablesPage extends ElementsPage {
     public void setAge(String age){
         set(regAgeField, age);
     }
+
     public void clickSubmit(){
         click(submitButton);
+    }
+
+    public String getAgeByEmail(String email){
+        By age = By.xpath("//div[text()='"+email+"']//preceding::div[1]");
+        return findElement(age).getText();
     }
 }
