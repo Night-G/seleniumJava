@@ -35,7 +35,7 @@ public class Tests {
     }
 
     @Test
-    public void findPhone(){
+    public void addFirstPhoneToBasketTest(){
         WebElement search = driver.findElement(By.xpath("//input[@name = \"search\"]"));
         search.sendKeys("телефон\n");
 
