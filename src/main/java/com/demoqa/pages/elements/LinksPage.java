@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
-public class LinksPage extends BasePage {
+public class LinksPage extends ElementsPage {
     By unauthorizedRequestLink = By.xpath("//a[@id='unauthorized']");
     By linkResponce = By.xpath("//p[@id='linkResponse']");
 
