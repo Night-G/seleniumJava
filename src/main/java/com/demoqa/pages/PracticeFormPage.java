@@ -22,6 +22,9 @@ public class PracticeFormPage extends FormsPage {
     private By readingCheckbox = By.xpath("//input[@id=' hobbies-checkbox-2']");
     private By musicCheckbox = By.xpath("//input[@id=' hobbies-checkbox-3']");
 
+    private By submitButton = By.id("submit");
+
+
     public By clickGenderM(){
         clickJS(genderInputM);
         return genderInputM;
@@ -78,4 +81,9 @@ public class PracticeFormPage extends FormsPage {
         return findElement(sportsCheckbox).isSelected();
     }
 
+
+    //made to fail
+    public void clickSubmitButton(){
+        click(submitButton);
+    }
 }

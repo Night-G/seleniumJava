@@ -37,4 +37,11 @@ public class PracticeFormTest extends BaseTest {
         boolean isSportsClicked = formsPage.isSportsCheckboxSelected();
         Assert.assertFalse("sports checkbox is selected",isSportsClicked);
     }
+
+    //should fail to check if screenshot works
+    @Test
+    public void checkScreenshot(){
+        var formsPage = homePage.goToForms().clickPracticeForm();
+        formsPage.clickSubmitButton();
+    }
 }
