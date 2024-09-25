@@ -1,6 +1,5 @@
 package com.demoqa.pages.alertsFrameWindows;
 
-import com.Patterns.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -9,7 +8,7 @@ public class FramesPage extends Alerts_Frame_WindowsPage {
     private By bigFrameTextElement = By.id("sampleHeading");
     private By smallFrameElement = By.id("frame2");
 
-    private void switchToBigBox(){
+    private void switchToBigFrame(){
         driver.switchTo().frame(iFrameBigFrame);
 
     }
@@ -27,7 +26,7 @@ public class FramesPage extends Alerts_Frame_WindowsPage {
     }
 
     public String getTextInBigFrame(){
-        switchToBigBox(); //   driver.switchTo().defaultContent() - return to original frame
+        switchToBigFrame(); //   driver.switchTo().defaultContent() - return to original frame
         return findElement(bigFrameTextElement).getText();
     }
 }
