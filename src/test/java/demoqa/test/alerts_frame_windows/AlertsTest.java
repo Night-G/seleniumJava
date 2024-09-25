@@ -10,7 +10,7 @@ import static utilities.SwitchToUtility.*;
 public class AlertsTest extends BaseTest {
 
     @Test
-    public void InformationAlertTest(){
+    public void informationAlertTest(){
         String expectedText = "You clicked a button";
 
         var alertPage = homePage.gotToAlertsFrameWindow().clickAlerts();
@@ -23,7 +23,7 @@ public class AlertsTest extends BaseTest {
     }
 
     @Test
-    public void ConfirmationAlertTest(){
+    public void confirmationAlertTest(){
         String expectedOkText = "Ok";
         String expectedCancelText = "Cancel";
 
@@ -33,5 +33,19 @@ public class AlertsTest extends BaseTest {
         String actualString = alertPage.getSelectedConfirmAlertText();
 
         Assert.assertEquals("<Some Issue>","You selected "+expectedOkText, actualString);
+    }
+
+    @Test
+    public void promptAlertTest(){
+        String txt = "test text";
+
+        var alertPage = homePage.gotToAlertsFrameWindow().clickAlerts();
+        alertPage.clickPromptAlertButton();
+
+        setAlertText(txt);
+        acceptAlert();
+
+        String actualText = alertPage.getPromptResultText();
+        Assert.assertEquals("You entered "+txt,actualText);
     }
 }

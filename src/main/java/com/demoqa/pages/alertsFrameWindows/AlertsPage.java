@@ -13,6 +13,7 @@ public class AlertsPage extends Alerts_Frame_WindowsPage {
     By confirmResult = By.xpath("//span[@id='confirmResult']");
 
     By promptAlertButtonElement = By.xpath("//Button[@id='promtButton']");
+    By promptResult = By.xpath("//span[@id='promptResult']");
 
     public void clickInformationAlertButton(){
         click(alertButtonElement);
@@ -32,5 +33,13 @@ public class AlertsPage extends Alerts_Frame_WindowsPage {
 
     public String getSelectedConfirmAlertText(){
         return findElement(confirmResult).getText();
+    }
+
+    public void clickPromptAlertButton(){
+        click(promptAlertButtonElement);
+    }
+
+    public String getPromptResultText(){
+        return findElement(promptResult).getText();
     }
 }
