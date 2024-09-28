@@ -54,7 +54,7 @@ public class BaseTest {
             File source = ts.getScreenshotAs(OutputType.FILE);
 
             File destination = new File(System.getProperty("user.dir")
-                    + "/resources/screenshots/("
+                    + "Desktop/sel/seleniumJava/resources/screenshots/("
                     +java.time.LocalDate.now()
                     + result.getName()
                     +").png");
