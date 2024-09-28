@@ -20,7 +20,7 @@ import static utilities.Utility.setUtilityDriver;
 
 public class BaseTest {
 
-    private static WebDriver driver;
+    protected static WebDriver driver;
     protected static BasePage basePage;
     protected static HomePage homePage;
     private static String URL = "https://demoqa.com/";

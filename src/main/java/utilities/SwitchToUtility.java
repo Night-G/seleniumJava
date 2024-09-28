@@ -24,4 +24,8 @@ public class SwitchToUtility extends Utility {
     public static void setAlertText(String text){
         switchTo().alert().sendKeys(text);
     }
+
+    public static void switchToWindow(String handle){
+        switchTo().window(handle);
+    }
 }

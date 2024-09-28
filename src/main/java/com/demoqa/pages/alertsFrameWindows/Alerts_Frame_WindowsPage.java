@@ -9,6 +9,7 @@ public class Alerts_Frame_WindowsPage extends BasePage {
     By modalDialogsElement = By.xpath("//span[text()='Modal Dialogs']");
     By alertsElement = By.xpath("//span[text()='Alerts']");
     By framesElement = By.xpath("//span[text()='Frames']");
+    By windowsElement = By.xpath("//span[text()='Browser Windows']");
 
     public ModalDialogsPage clickModalDialogs(){
         scrollToElementJS(modalDialogsElement);
@@ -26,5 +27,11 @@ public class Alerts_Frame_WindowsPage extends BasePage {
         scrollToElementJS(framesElement);
         click(framesElement);
         return new FramesPage();
+    }
+
+    public WindowsPage clickWindows(){
+        scrollToElementJS(windowsElement);
+        click(windowsElement);
+        return new WindowsPage();
     }
 }
