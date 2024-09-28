@@ -1,6 +1,6 @@
 package demoqa.test.widgets;
 
-import demoqa.Patterns.BaseTest;
+import demoqa.Base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 

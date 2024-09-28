@@ -1,6 +1,6 @@
 package com.demoqa.pages.widgets;
 
-import com.Patterns.BasePage;
+import com.Base.BasePage;
 import org.openqa.selenium.By;
 
 import static utilities.JavaScriptUtility.scrollToElementJS;
@@ -8,7 +8,7 @@ import static utilities.JavaScriptUtility.scrollToElementJS;
 public class WidgetsPage extends BasePage {
     private By selectMenuItem = By.xpath("//ul[@class='menu-list']/li[@id='item-8']/span[text()='Select Menu']");
     private By datePickerItem = By.xpath("//li[@id='item-2']/span[text()='Date Picker']");
-
+    private By progressBarItem = By.xpath("//span[text()='Progress Bar']");
     public SelectMenuPage clickSelectMenu (){
         scrollToElementJS(selectMenuItem);
         click(selectMenuItem);
@@ -19,5 +19,11 @@ public class WidgetsPage extends BasePage {
         scrollToElementJS(datePickerItem);
         click(datePickerItem);
         return new DatePickerMenuPage();
+    }
+
+    public ProgressBarPage clickProgressBar(){
+        scrollToElementJS(progressBarItem);
+        click(progressBarItem);
+        return new ProgressBarPage();
     }
 }

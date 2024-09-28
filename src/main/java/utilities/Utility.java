@@ -1,6 +1,6 @@
 package utilities;
 
-import com.Patterns.BasePage;
+import com.Base.BasePage;
 import org.openqa.selenium.WebDriver;
 
 public class Utility {

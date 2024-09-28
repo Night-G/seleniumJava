@@ -1,8 +1,7 @@
 package com.demoqa.pages.widgets;
 
-import com.Patterns.BasePage;
+import com.Base.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.Date;
 

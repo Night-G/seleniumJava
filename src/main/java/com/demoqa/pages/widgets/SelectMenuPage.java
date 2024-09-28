@@ -1,8 +1,6 @@
 package com.demoqa.pages.widgets;
 
-import com.Patterns.BasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import static utilities.JavaScriptUtility.scrollToElementJS;

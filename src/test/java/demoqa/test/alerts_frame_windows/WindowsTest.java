@@ -1,7 +1,6 @@
 package demoqa.test.alerts_frame_windows;
 
-import demoqa.Patterns.BaseTest;
-import junit.framework.TestCase;
+import demoqa.Base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 

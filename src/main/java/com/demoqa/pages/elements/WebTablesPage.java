@@ -1,6 +1,5 @@
 package com.demoqa.pages.elements;
 
-import com.Patterns.BasePage;
 import org.openqa.selenium.By;
 
 public class WebTablesPage extends ElementsPage {

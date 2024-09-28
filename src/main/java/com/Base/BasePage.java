@@ -1,4 +1,4 @@
-package com.Patterns;
+package com.Base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

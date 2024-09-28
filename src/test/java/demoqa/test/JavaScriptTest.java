@@ -1,6 +1,6 @@
 package demoqa.test;
 
-import demoqa.Patterns.BaseTest;
+import demoqa.Base.BaseTest;
 import org.junit.Test;
 
 public class JavaScriptTest extends BaseTest {

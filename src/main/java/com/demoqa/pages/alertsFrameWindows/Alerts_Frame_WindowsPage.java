@@ -1,6 +1,6 @@
 package com.demoqa.pages.alertsFrameWindows;
 
-import com.Patterns.BasePage;
+import com.Base.BasePage;
 import org.openqa.selenium.By;
 
 import static utilities.JavaScriptUtility.scrollToElementJS;

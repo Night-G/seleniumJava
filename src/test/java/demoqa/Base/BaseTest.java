@@ -1,6 +1,6 @@
-package demoqa.Patterns;
+package demoqa.Base;
 
-import com.Patterns.BasePage;
+import com.Base.BasePage;
 import com.demoqa.pages.HomePage;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -15,7 +15,7 @@ import org.testng.annotations.AfterMethod;
 import java.io.File;
 import java.io.IOException;
 
-import static com.Patterns.BasePage.delay;
+import static com.Base.BasePage.delay;
 import static utilities.Utility.setUtilityDriver;
 
 public class BaseTest {
@@ -37,10 +37,6 @@ public class BaseTest {
         homePage = new HomePage();
     }
 
-   /* @BeforeMethod
-    public void loadApplication(){
-
-    }*/
 
     @AfterClass
     public static void quitDriver(){

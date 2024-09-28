@@ -1,5 +1,5 @@
 package com.demoqa.pages;
-import com.Patterns.BasePage;
+import com.Base.BasePage;
 import com.demoqa.pages.alertsFrameWindows.Alerts_Frame_WindowsPage;
 import com.demoqa.pages.elements.ElementsPage;
 import com.demoqa.pages.widgets.WidgetsPage;
